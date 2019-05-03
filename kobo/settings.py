@@ -218,12 +218,12 @@ django.conf.locale.LANG_INFO.update(EXTRA_LANG_INFO)
 LANGUAGES = [
     (lang_code, get_language_info(lang_code)['name_local'])
         for lang_code in os.environ.get(
-            'DJANGO_LANGUAGE_CODES', 'en').split(' ')
+            'DJANGO_LANGUAGE_CODES', 'es').split(' ')
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-co'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'
 
 LOCALE_PATHS= (os.path.join(BASE_DIR, 'locale'),)
 
